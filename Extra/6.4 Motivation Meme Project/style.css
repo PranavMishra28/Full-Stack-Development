@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+.total{
+    text-align: center;
+}
+
+.fonts{
+    color: white;
+}
+
+#image{
+    border: 5px solid white;
+    margin-top: 20px;
+}

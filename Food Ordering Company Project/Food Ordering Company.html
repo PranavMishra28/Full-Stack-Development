@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Online Food Delivery Service in India | MyOnlineMeals.com</title>
+    <link rel="stylesheet" media="screen and (max-width:1289px)" href="(Project2)phone.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        :root {
+            --navbar-height: 59px;
+        }
+
+
+        .item {
+            text-decoration: none;
+
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: relative;
+            top: 0px;
+        }
+
+        #logo {
+            margin: 15px 43px;
+        }
+
+        #logo img {
+            height: 89px;
+            margin: 4px 3px;
+            border: 2px solid black;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.9;
+        }
+
+        #navbar ul {
+            display: flex;
+
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: block;
+            border-radius: 20px;
+            padding: 7px 11px;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: whitesmoke;
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 179px;
+        }
+
+        #home::before {
+            content: "";
+            background: url("https://www.cdc.gov/foodsafety/images/comms/food-Safety-Tips-small.jpg") no-repeat center center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.9;
+            top: 0px;
+            left: 0px;
+        }
+
+        .h-primary {
+            font-size: 3.8rem;
+            padding: 12px;
+            margin-top: 90px;
+
+        }
+
+        #home h1 {
+            color: white;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #home p {
+            color: white;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .btn {
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: brown;
+            color: white;
+            margin: 17px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .h-primary {
+            font-size: 3.8rem;
+            padding: 12px;
+            margin-top: 350px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .h-secondary {
+            font-size: 2.8rem;
+            padding: 12px;
+        }
+
+        #services {
+            margin: 34px;
+            display: flex;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #services .box {
+            border: 2px solid brown;
+            border-radius: 15px;
+            width: 31%;
+            padding: 28px;
+            background-color: rgb(184, 171, 171);
+            margin: 3px 6px;
+            margin-bottom: -290px;
+        }
+
+        #services .box img {
+            height: 160px;
+            display: block;
+            margin: auto;
+
+        }
+
+        #client-section {
+            height: 344px;
+        }
+
+        #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #clients img {
+            height: 125px;
+        }
+
+        .clientitem {
+            padding: 34px;
+        }
+
+        #client-section::before {
+            content: "";
+            position: absolute;
+            background: url("https://i.pinimg.com/originals/e6/7d/af/e67daf68a6e8f6d4a9283cb7d64b098c.jpg");
+            width: 100%;
+            height: 54%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #contact {
+            position: relative;
+
+        }
+
+        #contact::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            background: url("https://cdn.searchenginejournal.com/wp-content/uploads/2018/06/best-contact-us-pages-760x400.png") no-repeat center center/cover;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 9px 20px;
+        }
+
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 9px;
+
+        }
+
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+
+        #contact-box form {
+            width: 48%;
+        }
+
+        #contact-box label {
+            font-size: 1.4rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .btn2 {
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: brown;
+            color: white;
+            margin: 17px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-left: 238px;
+        }
+
+        .h1-primary {
+            font-size: 3.8rem;
+            padding: 12px;
+            margin-top: 11px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /* RESPONSIVE DESIGN: */
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://cdn3.vectorstock.com/i/thumb-large/10/77/food-fox-logo-vector-24171077.jpg"
+                alt=" MyOnlineMeals.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to MyOnlineMeal</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, exercitationem delectus accusantium quidem
+            fuga magni.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            fuga magni.</p>
+        <button class="btn">Order Now</button>
+    </section>
+    <section class="services-container"><br><br>
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="https://images.squarespace-cdn.com/content/v1/56a2785c69a91af45e06a188/1590678823777-3UO1FH17YY3AQOY9XUXR/ke17ZwdGBToddI8pDm48kNvT88LknE-K9M4pGNO0Iqd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UbeDbaZv1s3QfpIA4TYnL5Qao8BosUKjCVjCf8TKewJIH3bqxw7fF48mhrq5Ulr0Hg/Restaurant-Safe-Food-Delivery.png?format=2500w"
+                    alt="Error">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quibusdam at
+                    odio quaerat fugit laboriosam culpa voluptates aperiam iste maiores, amet saepe atque. ipsum dolor
+                    sit, amet consectetur adipisicing elit. Quod odio iusto voluptatibus
+                    facilis unde laboriosam repellat quis nulla, excepturi ducimus corrupti eius magnam labore id
+                    commodi pariatur, consequuntur ipsum iure magni expedita animi repudiandae?</p>
+            </div>
+            <div class="box">
+                <img src="https://tummytrip.com/wp-content/uploads/2019/12/Cheese-Pizza-500x375.jpg" alt="Error">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eligendi vel fugit
+                    aliquam commodi recusandae voluptatum inventore necessitatibus, rerum sapiente eaque reiciendis
+                    assumenda. ipsum dolor sit, amet consectetur adipisicing elit. Quod odio iusto voluptatibus
+                    facilis unde laboriosam repellat quis nulla, excepturi ducimus corrupti eius magnam labore id
+                    commodi pariatur, consequuntur ipsum iure magni expedita animi repudiandae?</p>
+            </div>
+            <div class="box">
+                <img src="https://miro.medium.com/max/1400/1*pYA4ZQkPPOEYkCXBsRUsfg.png" alt="Error">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed aperiam praesentium, qui
+                    eligendi laboriosam dolorem nostrum consequuntur, sit, corporis reiciendis possimus et dolorum.
+                    ipsum dolor sit, amet consectetur adipisicing elit. Quod odio iusto voluptatibus
+                    facilis unde laboriosam repellat quis nulla, excepturi ducimus corrupti eius magnam labore id
+                    commodi pariatur, consequuntur ipsum iure magni expedita animi repudiandae?</p>
+            </div>
+        </div>
+
+
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="clientitem">
+                <img src="https://miro.medium.com/max/348/0*Q1oTOLWGbSnl9aXC.png" alt="Our Client">
+            </div>
+            <div class="clientitem">
+                <img src="https://i.pinimg.com/originals/dc/36/c1/dc36c1d02dfe2ec192b7ec6d2289cb2d.png"
+                    alt="Our Client">
+            </div>
+            <div class="clientitem">
+                <img src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2020/05/swiggy-zomato-1590082756.jpg"
+                    alt="Our Client">
+            </div>
+            <div class="clientitem">
+                <img src="https://i.gadgets360cdn.com/large/Oneplus_newlogo_main_1584369675960.jpg" alt="Our Client">
+            </div>
+            <div class="clientitem">
+                <img src="https://s3-ap-southeast-1.amazonaws.com/assets.limetray.com/assets/user_images/content_images/original/bbk-logo-open-file-april-2.png"
+                    alt="Our Client">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h1-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email id">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="number" name="name" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <button class="btn2">Submit Now</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.MyOnlineMeals.com. All rights reserved
+        </div>
+    </footer>
+</body>
+
+</html>
